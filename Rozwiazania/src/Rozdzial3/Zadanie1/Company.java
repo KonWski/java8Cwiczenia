@@ -1,9 +1,7 @@
 package Rozdzial3.Zadanie1;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Collections;
-import java.util.stream.Stream;
 
 public class Company {
 
@@ -14,9 +12,12 @@ public class Company {
         this.employees = employees;
     }
 
+    public Company() {
+    }
+
     public Employee getBestPaidEmployee(){
 
-        Collections.sort(employees, (emp1, emp2) -> emp1.getSalary().compareTo(emp2.getSalary()));
+        Collections.sort(employees, (emp1, emp2) -> emp2.getSalary().compareTo(emp1.getSalary()));
         return employees.get(0);
     }
 
