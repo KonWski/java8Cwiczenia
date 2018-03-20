@@ -1,4 +1,4 @@
-package Rozdzial3.Zadanie1;
+package Rozdzial3.Zadanie1_2;
 
 /**
  * Zaimplementuj interfejs Measurable w klasie Employee

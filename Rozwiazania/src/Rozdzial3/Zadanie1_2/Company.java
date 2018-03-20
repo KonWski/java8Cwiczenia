@@ -1,4 +1,4 @@
-package Rozdzial3.Zadanie1;
+package Rozdzial3.Zadanie1_2;
 
 import java.util.ArrayList;
 import java.util.Collections;
