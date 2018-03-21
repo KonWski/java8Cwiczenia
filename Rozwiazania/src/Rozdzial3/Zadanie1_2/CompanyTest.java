@@ -25,8 +25,12 @@ public class CompanyTest {
 
     @Test
     public void checkGetBestPaidEmployee(){
-        System.out.println(comp.getBestPaidEmployee().lastName);
         Assert.assertEquals(emp2, comp.getBestPaidEmployee());
+    }
+
+    @Test
+    public void checkGetOldestEmployee(){
+        Assert.assertEquals(emp3, comp.getOldestEmployee());
     }
 
 }

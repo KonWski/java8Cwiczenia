@@ -21,6 +21,26 @@ public class Company {
         return employees.get(0);
     }
 
+    public Employee getOldestEmployee(){
+
+        Collections.sort(employees, (emp1, emp2) -> emp2.getAge().compareTo(emp1.getAge()));
+        return employees.get(0);
+    }
+
+    /*Zadanie 14
+    *
+    * Napisz wywołanie Arrays.sort, które sortuje pracowników według wynagrodzenia,
+    * a w przypadku takich samych wynagrodzeń według stanowiska. Użyj Comparator.thenComparing.
+    * Potem w odwrotnej kolejności
+    */
+
+    public void sortEmployeesOnSalary(){
+
+
+
+    }
+
+
     double average(Measurable[] objects){
         double average = 0.0;
         for(Measurable object : objects){
